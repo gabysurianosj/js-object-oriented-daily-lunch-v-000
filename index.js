@@ -54,6 +54,7 @@ class Meal {
   }
 
   deliveries()
+  {return this.deliveries().map}
 }
 
 }

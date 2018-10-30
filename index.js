@@ -23,7 +23,7 @@ meals(){
   return this.deliveries().reduce((list, delivery) => {
     list.push(delivery.meal())
     return [...new Set(list)]
-  }
+  }, [])
 }
 
 }

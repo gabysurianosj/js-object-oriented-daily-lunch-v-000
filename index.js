@@ -26,3 +26,6 @@ meals(){
     },[])
   }
 };
+
+class Customer {
+}

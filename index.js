@@ -20,7 +20,7 @@ customers()
 {return store.customers.filter(customer => neighborhoodIds === this.id)}
 
 meals(){
-  return this.deliveries().reduce()
+  return this.deliveries().reduce((list, delivery) => {}
 }
 
 }

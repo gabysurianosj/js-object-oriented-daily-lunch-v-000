@@ -7,5 +7,7 @@ let mealIds = 0
 let deliveryIds = 0
 
 class Neighborhood {
-  
+  constructor(name){
+    
+  }
 }

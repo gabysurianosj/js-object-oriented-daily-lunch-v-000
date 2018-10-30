@@ -49,7 +49,8 @@ class Meal {
   constructor(title, price){
     this.id = ++mealIds
     this.title = title
-    this.price = price 
+    this.price = price
+    store.meals.push(this)
   }
 }
 

@@ -52,6 +52,8 @@ class Meal {
     this.price = price
     store.meals.push(this)
   }
+
+  deliveries()
 }
 
 }

@@ -19,4 +19,6 @@ deliveries()
 customers()
 {return store.customers.filter(customer => neighborhoodIds === this.id)}
 
+meals()
+
 }

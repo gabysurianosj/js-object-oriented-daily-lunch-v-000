@@ -45,6 +45,8 @@ class Customer {
   {return this.meals().reduce((total, meal) => (total += meal.price), 0)}
 };
 
-
+class Meal {
+  
+}
 
 }

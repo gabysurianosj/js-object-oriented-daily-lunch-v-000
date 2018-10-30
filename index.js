@@ -20,7 +20,10 @@ customers()
 {return store.customers.filter(customer => neighborhoodIds === this.id)}
 
 meals(){
-  return this.deliveries().reduce((list, delivery) => {}
+  return this.deliveries().reduce((list, delivery) => {
+    list.push(delivery.meal())
+    return [...new Set(list)]
+  }
 }
 
 }

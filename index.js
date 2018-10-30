@@ -54,7 +54,28 @@ class Meal {
   }
 
   deliveries()
-  {return this.deliveries().map}
-}
-
-}
+  {return store.deliveries.filter(delivery => delivery.mealId === this.id)}
+   customers(){
+    const allCustomers = this.deliveries().map(delivery => delivery.customer())
+    const uniqueCustomers = [...new Set(allCustomers)]
+    return uniqueCustomers
+  }
+   static byPrice(){
+    return store.meals.sort((m1, m2) => m2.price - m1.price)
+  }
+ };
+ class Delivery {
+  constructor(mealId, neighborhoodId, customerId){
+    this.id = ++deliveryIds
+    this.mealId = mealId
+    this.neighborhoodId = neighborhoodId
+    this.customerId = customerId
+    store.deliveries.push(this)
+  }
+   meal()
+  {return store.meals.find(meal => meal.id === this.mealId)}
+   customer()
+  {return store.customers.find(customer => customer.id === this.customerId)}
+   neighborhood()
+  {return store.neighborhoods.find(neighborhood => neighborhood.id === this.neighborhoodId)}
+ };

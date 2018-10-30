@@ -34,4 +34,7 @@ class Customer {
     this.neighborhoodIds = neighborhoodIds
     store.customers.push(this)
   }
+
+  deliveries()
+  {return store.deliveries.filter(delivery => delivery.customerId)}
 }

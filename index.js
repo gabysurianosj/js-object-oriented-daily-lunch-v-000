@@ -28,7 +28,7 @@ meals(){
 };
 
 class Customer {
-  constructor(name) {
-    this.
+  constructor(name, neighborhoodIds) {
+    this.Id
   }
 }

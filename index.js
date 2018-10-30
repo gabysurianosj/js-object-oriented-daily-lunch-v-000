@@ -8,7 +8,7 @@ let deliveryIds = 0
 
 class Neighborhood {
   constructor(name){
-    this.Id = ++neighborhoodIds
+    this.id = ++neighborhoodIds
     this.name = name
     store.neighborhoods.push(this)
   }

@@ -28,4 +28,7 @@ meals(){
 };
 
 class Customer {
+  constructor(name) {
+    this.
+  }
 }

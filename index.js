@@ -46,7 +46,9 @@ class Customer {
 };
 
 class Meal {
-  
+  constructor(title, price){
+    
+  }
 }
 
 }

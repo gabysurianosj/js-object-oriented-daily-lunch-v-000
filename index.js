@@ -29,6 +29,7 @@ meals(){
 
 class Customer {
   constructor(name, neighborhoodIds) {
-    this.Id
+    this.Id = ++customerIds
+    this.name = 
   }
 }
